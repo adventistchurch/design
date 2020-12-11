@@ -1,0 +1,42 @@
+{% if event %}
+<section class="l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap--6-of-7 u-spacing--double--until-large">
+  <div class="c-block c-event u-spacing">
+    {% if event.meta %}
+      <div class="c-event__meta u-font--secondary--xs u-color--gray">
+        <span class="c-event__meta--date">
+          <span class="c-event__meta--date-icon">{% include '@atoms/icons/icon-date.twig' %}</span>
+          {{ event.meta.month }} {{ event.meta.day }}
+        </span>
+        <span class="c-event__meta--time">
+        {% if event.meta.start %}
+          {{ event.meta.start }}
+        {% endif %}
+        {% if event.meta.end %}
+          &mdash; {{ event.meta.end }}
+        {% endif %}
+        {% if event.meta.city or event.meta.state %}
+            {{ event.meta.city }}{{ event.meta.state }}
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if event.teaser %}
+      <p class="c-event__teaser">{{ event.teaser }}</p>
+    {% endif %}
+    {% if event.picture %}
+      {% include '@atoms/images/picture.twig' with event.picture %}
+    {% endif %}
+    {% if event.subtitle %}
+      <h2 class="c-event_subtitle">{{ event.subtitle }}</h2>
+    {% endif %}
+    {% if event.text %}
+      <div class="c-event__text u-spacing">
+        {{ event.text | raw }}
+      </div>
+    {% endif %}
+    {% if event.signup %}
+      {% include '@molecules/forms/event-signup.twig' %}
+    {% endif %}
+  </div>
+</section>
+{% endif %}

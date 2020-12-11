@@ -1,0 +1,10 @@
+{% for month in months %}
+  <h2>{{ month.name }}</h2>
+  <div class="u-spacing">
+  {% for event in month.events %}
+   {% include '@molecules/events/event-block.twig' with event %}
+  {% endfor %}
+  </div>
+{% endfor %}
+
+

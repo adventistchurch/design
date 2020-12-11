@@ -801,3 +801,148 @@
     }
   }
 }
+
+// EVENT CALENDAR ====================================
+.c-event {
+  padding-left: $pad-mobile;
+  display: block;
+  width: 100%;
+
+  @include media(">large") {
+    padding-left: $pad;
+  }
+
+  &__meta,
+  &__day {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+    svg {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    &--location {
+    padding-left: $pad;
+    }
+  }
+
+  &__teaser {
+    font-family: $ff-font--secondary;
+    font-size: rem(24);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  // LIST ITEM -----------------------------------------
+  &--list-item {
+    display: flex;
+    width: 100%;
+    background-color: $c-gray--light;
+
+    .c-event__day {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 180px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      transition: width 0.35s ease;
+
+
+      &--has-img:hover {
+        width: 50%;
+      }
+
+      &--date-icon {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: $c-white;
+        }
+      }
+
+      &--month {
+        display: block;
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+      }
+
+      &--day {
+        display: block;
+        margin-bottom: auto;
+        width: 100%;
+        font-size: 72px;
+        text-align: center;
+        line-height: 1;
+        z-index: 2;
+      }
+    }
+
+    .c-event__info {
+      padding-left: $space + $space;
+
+      .c-event__heading {
+        margin-bottom: $space / 2;
+        font-family: $ff-font--primary;
+        font-size: rem(20);
+      }
+
+      .c-event__meta--date {
+        margin-right: $space;
+      }
+    }
+
+    .c-event__button {
+      margin-top: $space;
+      letter-spacing: 1px;
+    }
+  }
+  // CALENDAR ITEM -----------------------------------------
+  &--calendar-item {
+    padding-bottom: $pad;
+    background-color: $c-gray--light;
+
+    &__meta {
+      margin-top: $space / 2;
+      @include u-font--secondary--s;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &__heading {
+      margin-top: $space / 4;
+      font-weight: 600;
+    }
+
+    &__teaser,
+    &__button {
+      margin-top: $space / 2;
+
+      @include media(">large") {
+        margin-top: $space;
+      }
+    }
+
+    &__button {
+      letter-spacing: 1px;
+    }
+  }
+}

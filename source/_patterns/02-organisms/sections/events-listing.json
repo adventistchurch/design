@@ -1,0 +1,147 @@
+{
+  "months": [
+    {
+      "name" : "January",
+      "events" : [
+        {
+          "view": "list",
+          "title": "ALPS Sample Event One",
+          "subtitle": "Subtitle Header",
+          "meta": {
+            "month": "January",
+            "day": "23",
+            "year": "2021",
+            "start": "8:00 PM",
+            "end": "11:00 PM",
+            "city": "Somerville",
+            "state": "Massachusetts"
+          },
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/1200/500",
+              "src_m": "//picsum.photos/1200/500"
+            },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/1200/500"
+            }
+          },
+          "has_break_xl": false
+          },
+          "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+          "text": "<p>Lorem sed risus ultricies tristique nulla aliquet. Iaculis nunc sed augue lacus viverra vitae. Molestie ac feugiat sed lectus vestibulum. Aliquam etiam erat velit scelerisque in dictum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Nunc non blandit massa enim nec dui. Magna ac placerat vestibulum lectus mauris ultrices eros in. Vitae purus faucibus ornare suspendisse sed. Viverra tellus in hac habitasse. Blandit turpis cursus in hac habitasse. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Venenatis tellus in metus vulputate eu scelerisque felis. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Ultricies integer quis auctor elit sed vulputate. Pellentesque id nibh tortor id. Quam adipiscing vitae proin sagittis nisl rhoncus. Neque laoreet suspendisse interdum consectetur libero. Tincidunt dui ut ornare lectus sit amet.</p><p>Turpis egestas sed tempus urna. Dolor purus non enim praesent elementum. Tempus iaculis urna id volutp at lacus laoreet non. Ut eu sem integer vitae justo eget magna fermentum iaculis. Netus et malesuada fames ac. Pellentesque massa placerat duis ultricies. Libero enim sed faucibus turpis in. Ac auctor augue mauris augue neque gravida in fermentum et. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Tincidunt lobortis feugiat vivamus at augue eget. Turpis egestas integer eget aliquet nibh praesent. Nisi lacus sed viverra tellus in. Scelerisque fermentum dui faucibus in ornare quam viverra orci.</p>",
+          "signup": true,
+          "button": {
+            "icon": "icon-plus",
+            "text": "View Details",
+            "class": "o-button--outline"
+          }
+        },
+        {
+          "view": "list",
+          "title": "ALPS Sample Event Two",
+          "subtitle": "Subtitle Header",
+          "meta": {
+            "month": "January",
+            "day": "25",
+            "year": "2021",
+            "start": "3:00 PM",
+            "end": "5:00 PM",
+            "city": "Gotham",
+            "state": ""
+          },
+          "teaser": "Quis varius quam quisque id. Nunc sed id semper risus in hendrerit gravida. Massa eget egestas purus viverra. Viverra mauris in aliquam sem fringilla ut morbi. Sapien eget mi proin sed libero. In nisl nisi scelerisque eu. Ut tellus elementum sagittis vitae. Nec dui nunc mattis enim ut.",
+          "text": "<p>Amet consectetur adipiscing elit duis tristique sollicitudin. In mollis nunc sed id semper. Odio ut enim blandit volutpat. Placerat in egestas erat imperdiet sed euismod. Rhoncus urna neque viverra justo. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nam libero justo laoreet sit amet cursus sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Nam at lectus urna duis convallis convallis tellus id. Sed blandit libero volutpat sed. Nisl suscipit adipiscing bibendum est. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Blandit massa enim nec dui.</p><p>Sed id semper risus in hendrerit gravida rutrum. Pellentesque sit amet porttitor eget dolor. Gravida rutrum quisque non tellus. Sed blandit libero volutpat sed. Lectus proin nibh nisl condimentum. Massa id neque aliquam vestibulum morbi blandit cursus. Leo vel fringilla est ullamcorper. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Orci eu lobortis elementum nibh tellus molestie nunc non blandit. Orci nulla pellentesque dignissim enim. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Nam libero justo laoreet sit amet. Nisl vel pretium lectus quam. Lacinia at quis risus sed vulputate odio ut enim blandit. Vulputate dignissim suspendisse in est. Dui id ornare arcu odio ut sem.</p><p>Risus in hendrerit gravida rutrum quisque. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Fringilla phasellus faucibus scelerisque eleifend. Vitae congue eu consequat ac felis donec. Consequat mauris nunc congue nisi vitae. Ut tellus elementum sagittis vitae et leo duis ut diam. Pretium viverra suspendisse potenti nullam ac. Nulla facilisi etiam dignissim diam. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Diam donec adipiscing tristique risus nec feugiat in fermentum. Quis eleifend quam adipiscing vitae proin. Sollicitudin tempor id eu nisl nunc. Eget lorem dolor sed viverra ipsum nunc. Sed risus pretium quam vulputate dignissim.</p>",
+          "signup": true,
+          "button": {
+            "icon": "icon-plus",
+            "text": "View Details",
+            "class": "o-button--outline"
+          }
+        }
+      ]
+    },
+     {
+      "name" : "February",
+      "events" : [
+        {
+          "view": "list",
+          "title": "ALPS Sample Event Three",
+          "subtitle": "Subtitle Header",
+          "meta": {
+            "month": "February",
+            "day": "10",
+            "year": "2021",
+            "start": "8:00 PM",
+            "end": "11:00 PM",
+            "city": "Central City",
+            "state": "Massachusetts"
+          },
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/1200/500",
+              "src_m": "//picsum.photos/1200/500"
+            },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/1200/500"
+            }
+          },
+          "has_break_xl": false
+          },
+          "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+          "text": "<p>Lorem sed risus ultricies tristique nulla aliquet. Iaculis nunc sed augue lacus viverra vitae. Molestie ac feugiat sed lectus vestibulum. Aliquam etiam erat velit scelerisque in dictum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Nunc non blandit massa enim nec dui. Magna ac placerat vestibulum lectus mauris ultrices eros in. Vitae purus faucibus ornare suspendisse sed. Viverra tellus in hac habitasse. Blandit turpis cursus in hac habitasse. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Venenatis tellus in metus vulputate eu scelerisque felis. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Ultricies integer quis auctor elit sed vulputate. Pellentesque id nibh tortor id. Quam adipiscing vitae proin sagittis nisl rhoncus. Neque laoreet suspendisse interdum consectetur libero. Tincidunt dui ut ornare lectus sit amet.</p><p>Turpis egestas sed tempus urna. Dolor purus non enim praesent elementum. Tempus iaculis urna id volutp at lacus laoreet non. Ut eu sem integer vitae justo eget magna fermentum iaculis. Netus et malesuada fames ac. Pellentesque massa placerat duis ultricies. Libero enim sed faucibus turpis in. Ac auctor augue mauris augue neque gravida in fermentum et. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Tincidunt lobortis feugiat vivamus at augue eget. Turpis egestas integer eget aliquet nibh praesent. Nisi lacus sed viverra tellus in. Scelerisque fermentum dui faucibus in ornare quam viverra orci.</p>",
+          "signup": true,
+          "button": {
+            "icon": "icon-plus",
+            "text": "View Details",
+            "class": "o-button--outline"
+          }
+        },
+        {
+          "view": "list",
+          "title": "ALPS Sample Event Four",
+          "subtitle": "Subtitle Header",
+          "meta": {
+            "month": "February",
+            "day": "22",
+            "year": "2021",
+            "start": "3:00 PM",
+            "end": "5:00 PM",
+            "city": "Somewhere",
+            "state": "Texas"
+          },
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/1200/500",
+              "src_m": "//picsum.photos/1200/500"
+            },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/1200/500"
+            }
+          },
+          "has_break_xl": false
+          },
+          "teaser": "Quis varius quam quisque id. Nunc sed id semper risus in hendrerit gravida. Massa eget egestas purus viverra. Viverra mauris in aliquam sem fringilla ut morbi. Sapien eget mi proin sed libero. In nisl nisi scelerisque eu. Ut tellus elementum sagittis vitae. Nec dui nunc mattis enim ut.",
+          "text": "<p>Amet consectetur adipiscing elit duis tristique sollicitudin. In mollis nunc sed id semper. Odio ut enim blandit volutpat. Placerat in egestas erat imperdiet sed euismod. Rhoncus urna neque viverra justo. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nam libero justo laoreet sit amet cursus sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Nam at lectus urna duis convallis convallis tellus id. Sed blandit libero volutpat sed. Nisl suscipit adipiscing bibendum est. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Blandit massa enim nec dui.</p><p>Sed id semper risus in hendrerit gravida rutrum. Pellentesque sit amet porttitor eget dolor. Gravida rutrum quisque non tellus. Sed blandit libero volutpat sed. Lectus proin nibh nisl condimentum. Massa id neque aliquam vestibulum morbi blandit cursus. Leo vel fringilla est ullamcorper. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Orci eu lobortis elementum nibh tellus molestie nunc non blandit. Orci nulla pellentesque dignissim enim. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Nam libero justo laoreet sit amet. Nisl vel pretium lectus quam. Lacinia at quis risus sed vulputate odio ut enim blandit. Vulputate dignissim suspendisse in est. Dui id ornare arcu odio ut sem.</p><p>Risus in hendrerit gravida rutrum quisque. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Fringilla phasellus faucibus scelerisque eleifend. Vitae congue eu consequat ac felis donec. Consequat mauris nunc congue nisi vitae. Ut tellus elementum sagittis vitae et leo duis ut diam. Pretium viverra suspendisse potenti nullam ac. Nulla facilisi etiam dignissim diam. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Diam donec adipiscing tristique risus nec feugiat in fermentum. Quis eleifend quam adipiscing vitae proin. Sollicitudin tempor id eu nisl nunc. Eget lorem dolor sed viverra ipsum nunc. Sed risus pretium quam vulputate dignissim.</p>",
+          "signup": true,
+          "button": {
+            "icon": "icon-plus",
+            "text": "View Details",
+            "class": "o-button--outline"
+          }
+        }
+      ]
+    }
+  ]
+}

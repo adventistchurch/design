@@ -1,0 +1,60 @@
+{% if event %}
+  {% if event.view == 'list' %}
+    {% set date_bg = event.picture.img.src_s %}
+    {#} LIST VIEW ------------------------------------------ {#}
+    <div class="c-block c-event c-event--list-item u-spacing">
+      {% if event.meta %}
+        <div class="c-event__day c-event__day--date {% if date_bg %}c-event__day--has-img{% endif %} u-theme--background-color-trans--darker u-theme--gradient--left" style="background-image:url({{ date_bg }}")>
+            <span class="c-event__day--date-icon u-path-fill--white">{% include '@atoms/icons/icon-date.twig' %}</span>
+            <span class="c-event__day--month">
+              {{ event.meta.month }}
+            </span>
+            <span class="c-event__day--day">
+              {{ event.meta.day }}
+            </span>
+          </div>
+      {% endif %}
+      <div class="c-event__info">
+        {% if event.title %}
+          <h2 class="c-event__heading u-theme--color--dark">{{ event.title }}</h2>
+        {% endif %}
+        <p class="u-font--secondary u-theme--color--base">
+          <span class="c-event__meta c-event__meta--date">{{ event.meta.month }} {{ event.meta.day }}, {{ event.meta.year }}</span>
+          <span class="c-event__meta c-event__meta--city">{{ event.meta.city }}</span>
+        </p>
+        <p class="c-event__button">
+          {% set button_default = event.button %}
+          {% include '@atoms/buttons/button.twig' %}
+        </p>
+      </div>
+    </div><!-- /c-event -->
+  {#} END LIST VIEW ------------------------------------------ {#}
+  {% elseif event.view == 'calendar' %}
+    <div class="c-block c-event c-event--calendar-item u-border--left">
+      {% if event.meta %}
+        <p class="c-event--calendar-item__meta">
+          {{ event.meta.month }} {{ event.meta.day }}
+          {% if event.meta.start %}
+            , {{ event.meta.start }}
+          {% endif %}
+          {% if event.meta.end %}
+            &mdash; {{ event.meta.end }}
+          {% endif %}
+        </p>
+      {% endif %}
+      {% if event.title %}
+        <h2 class="c-event--calendar-item__heading u-font--primary--l u-theme--color--dark">{{ event.title }}</h2>
+      {% endif %}
+      {% if event.meta.city %}
+        <p class="c-event--calendar-item__meta"> {{ event.meta.city }}{{ event.meta.state }}</p>
+      {% endif %}
+      {% if event.teaser %}
+        <p class="c-event--calendar-item__teaser u-font--secondary--m">{{ event.teaser }}</p>
+      {% endif %}
+      <p class="c-event--calendar-item__button">
+        {% set button_default = event.button %}
+        {% include '@atoms/buttons/button.twig' %}
+      </p>
+    </div>
+  {% endif %}
+{% endif %}

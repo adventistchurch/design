@@ -1,0 +1,41 @@
+{
+  "event": {
+    "view": "calendar",
+    "title": "ALPS Sample Event One",
+    "subtitle": "Subtitle Header",
+    "meta": {
+      "month": "January",
+      "day": "23",
+      "year": "2021",
+      "start": "8:00 PM",
+      "end": "11:00 PM",
+      "city": "Somerville",
+      "state": ", Massachusetts"
+    },
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//picsum.photos/1200/500",
+        "src_m": "//picsum.photos/1200/500"
+      },
+      "has_break_l": {
+        "img_break_l": "900",
+        "img": {
+          "src_l": "//picsum.photos/1200/500"
+        }
+      },
+    "has_break_xl": false
+    },
+    "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+    "text": "<p>Lorem sed risus ultricies tristique nulla aliquet. Iaculis nunc sed augue lacus viverra vitae. Molestie ac feugiat sed lectus vestibulum. Aliquam etiam erat velit scelerisque in dictum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Nunc non blandit massa enim nec dui. Magna ac placerat vestibulum lectus mauris ultrices eros in. Vitae purus faucibus ornare suspendisse sed. Viverra tellus in hac habitasse. Blandit turpis cursus in hac habitasse. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Venenatis tellus in metus vulputate eu scelerisque felis. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Ultricies integer quis auctor elit sed vulputate. Pellentesque id nibh tortor id. Quam adipiscing vitae proin sagittis nisl rhoncus. Neque laoreet suspendisse interdum consectetur libero. Tincidunt dui ut ornare lectus sit amet.</p><p>Turpis egestas sed tempus urna. Dolor purus non enim praesent elementum. Tempus iaculis urna id volutp at lacus laoreet non. Ut eu sem integer vitae justo eget magna fermentum iaculis. Netus et malesuada fames ac. Pellentesque massa placerat duis ultricies. Libero enim sed faucibus turpis in. Ac auctor augue mauris augue neque gravida in fermentum et. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Tincidunt lobortis feugiat vivamus at augue eget. Turpis egestas integer eget aliquet nibh praesent. Nisi lacus sed viverra tellus in. Scelerisque fermentum dui faucibus in ornare quam viverra orci.</p>",
+    "signup": true,
+    "button": {
+      "icon": "icon-arrow-long-right",
+      "icon_size": "u-icon--s",
+      "text": "View Details",
+      "class": "o-button--outline",
+      "align_right": true
+    }
+  }
+}

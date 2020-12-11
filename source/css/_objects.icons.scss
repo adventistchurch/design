@@ -16,6 +16,11 @@ $icon-big: rem(65);
   align-items: center;
   justify-content: center;
   margin-right: rem(5);
+
+  &.u-icon--align--right {
+    margin-left: rem(10);
+    margin-right: 0;
+  }
 }
 
 .u-icon--xs,
@@ -46,6 +51,10 @@ $icon-big: rem(65);
 .u-icon--xl svg {
   width: $icon-big;
   height: $icon-big;
+}
+
+.u-icon--align--right {
+  order: 99;
 }
 
 /**
