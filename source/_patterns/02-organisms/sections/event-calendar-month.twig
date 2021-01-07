@@ -1,0 +1,56 @@
+<div id="c-alps-calendar">
+  <div role="row" class="tribe-events-calendar-month__header-row">
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Sunday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">S</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Sunday</span>
+      </h3>
+    </div>
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Monday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">M</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Monday</span>
+      </h3>
+    </div>
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Tuesday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">T</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Tuesday</span>
+      </h3>
+    </div>
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Wednesday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">W</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Wednesday</span>
+      </h3>
+    </div>
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Thursday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">T</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Thursday</span>
+      </h3>
+    </div>
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Friday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">F</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Friday</span>
+      </h3>
+    </div>
+    <div class="tribe-events-calendar-month__header-column" role="columnheader" aria-label="Saturday">
+      <h3 class="tribe-events-calendar-month__header-column-title tribe-common-b3">
+        <span class="tribe-events-calendar-month__header-column-title-mobile">S</span>
+        <span class="tribe-events-calendar-month__header-column-title-desktop tribe-common-a11y-hidden">Saturday</span>
+      </h3>
+    </div>
+  </div>
+
+
+  {% if calendar %}
+  <div role="rowgroup">
+    {% for week in calendar.weeks %}
+      {% include '@molecules/events/event-calendar-week-block.twig' %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>

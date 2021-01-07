@@ -1,0 +1,360 @@
+// EVENT CALENDAR ====================================
+.c-event {
+  padding-left: $pad-mobile;
+  display: block;
+  width: 100%;
+
+  @include media(">large") {
+    padding-left: $pad;
+  }
+
+  &__meta,
+  &__day {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+    svg {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    &--location {
+      padding-left: $pad;
+    }
+  }
+
+  &__teaser {
+    font-family: $ff-font--secondary;
+    font-size: rem(24);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  // LIST ITEM -----------------------------------------
+  &--list-item {
+    display: flex;
+    width: 100%;
+    background-color: $c-gray--light;
+
+    .c-event__day {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 180px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      transition: width 0.35s ease;
+
+
+      &--has-img:hover {
+        width: 50%;
+      }
+
+      &--date-icon {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: $c-white;
+        }
+      }
+
+      &--month {
+        display: block;
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+      }
+
+      &--day {
+        display: block;
+        margin-bottom: auto;
+        width: 100%;
+        font-size: 72px;
+        text-align: center;
+        line-height: 1;
+        z-index: 2;
+      }
+    }
+
+    .c-event__info {
+      padding-left: $space + $space;
+
+      .c-event__heading {
+        margin-bottom: $space / 2;
+        font-family: $ff-font--primary;
+        font-size: rem(20);
+      }
+
+      .c-event__meta--date {
+        margin-right: $space;
+      }
+    }
+
+    .c-event__button {
+      margin-top: $space;
+      letter-spacing: 1px;
+    }
+  }
+
+  // CALENDAR ITEM -----------------------------------------
+  &--calendar-item {
+    padding-bottom: $pad;
+    background-color: $c-gray--light;
+
+    &__meta {
+      margin-top: $space / 2;
+      @include u-font--secondary--s;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &__heading {
+      margin-top: $space / 4;
+      font-weight: 600;
+    }
+
+    &__teaser,
+    &__button {
+      margin-top: $space / 2;
+
+      @include media(">large") {
+        margin-top: $space;
+      }
+    }
+
+    &__button {
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.c-events-listing {
+
+  &__month {
+    margin: $space;
+    padding-left: $space;
+    border-left: 4px solid;
+    color: currentColor;
+  }
+
+  &__list {
+    margin-bottom: $space * 2;
+  }
+}
+
+.c-event,
+.c-events,
+.c-events-listing {
+  .pagination {
+
+    .pagination__page {
+      text-decoration: none;
+      border: 0;
+    }
+
+    .pagination__prev svg,
+    .pagination__next svg {
+      display: inline-block;
+      position: relative;
+      transform: translateY(4px); // SETS BRACKETS CENTER ALIGNED
+    }
+  }
+}
+
+#c-alps-calendar {
+  border: 1px solid #eee;
+
+  [role=row] {
+    display: flex;
+
+    & > div {
+      width: calc((100 / 7) * 1%);
+      min-width: calc((100 / 7) * 1%);
+
+      @include column-gutters;
+    }
+
+    &:first-of-type {
+      padding-top: $space;
+      padding-bottom: $space
+    }
+  }
+
+  [role=columnheader] h3 {
+
+    @include u-font--secondary-nav;
+
+    & span:first-child {
+      @include media(">large") {
+        display: none;
+      }
+    }
+
+    & span:last-child {
+      @include media("<=large") {
+        display: none;
+      }
+    }
+  }
+
+  [role=rowgroup] [role=row] {
+    display: flex;
+
+    [role=gridcell] {
+      position: relative;
+      padding: $space;
+      width: calc((100 / 7) * 1%);
+      min-width: calc((100 / 7) * 1%);
+      min-height: 200px;
+      border-top: 1px solid #eee;
+      border-left: 1px solid #eee;
+
+      .c-calendar-event__title {
+        font-family: $ff-font--secondary;
+        font-size: rem(18);
+        line-height: 1.4;
+        font-weight: normal;
+      }
+
+      .c-calendar-info-hover {
+        position: absolute;
+        display: none;
+        padding: $space;
+        left: 0;
+        bottom: 210px;
+        width: 400px;
+        background: $c-gray--light;
+        z-index: 10000;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125);
+
+        &__inner {
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -$space * 2;
+            left: -15px;
+            border-left: $space solid transparent;
+            border-right: $space solid transparent;
+            border-top: $space solid $c-gray--light;
+            filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.125));
+            z-index: -1;
+          }
+        }
+
+        &__teaser {
+          /* autoprefixer: off */
+          display: -webkit-box !important;
+          /* autoprefixer: on */
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+
+      &[data-event-day] {
+        cursor: pointer;
+
+        &:hover .c-calendar-info-hover {
+          display: block;
+        }
+      }
+
+      &[data-event-day]:first-child {
+        &:hover .c-calendar-info-hover {
+          left: 0;
+          bottom: 210px;
+        }
+      }
+
+      &[data-event-day]:last-child {
+        &:hover .c-calendar-info-hover {
+          left: auto;
+          right: 0;
+
+          &__inner::after {
+            left: auto;
+            right: $space - $space / 2;
+          }
+        }
+      }
+
+      h3 {
+        padding-bottom: $space;
+
+        @include u-font--secondary-nav;
+
+        span {
+          @include screen-reader-text;
+        }
+      }
+
+      button {
+        @include media(">medium") {
+          display: none;
+        }
+      }
+    }
+
+    // IF FIRST ROW, SET INFO WINDOW HOVER BELOW
+    &:first-child {
+      [role=gridcell]:hover .c-calendar-info-hover {
+        bottom: -300px;
+
+        // ARROW FACES UP
+        &__inner::before {
+          position: absolute;
+          content: '';
+          top: -$space * 2.5;
+          left: -15px;
+          border-left: $space solid transparent;
+          border-right: $space solid transparent;
+          border-bottom: $space solid $c-gray--light;
+        }
+
+        &__inner::after {
+          display: none;
+        }
+      }
+
+      // FIRST CALENDAR ROW
+      [role=gridcell]:last-child:hover .c-calendar-info-hover {
+
+        left: auto;
+        right: 0;
+
+        &__inner::before {
+          position: absolute;
+          content: '';
+          top: -$space * 2.5;
+          border-left: $space solid transparent;
+          border-right: $space solid transparent;
+          border-bottom: $space solid $c-gray--light;
+          left: 90%;
+        }
+
+        &__inner::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

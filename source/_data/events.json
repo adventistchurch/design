@@ -93,5 +93,301 @@
       "text": "<p>Lorem sed risus ultricies tristique nulla aliquet. Iaculis nunc sed augue lacus viverra vitae. Molestie ac feugiat sed lectus vestibulum. Aliquam etiam erat velit scelerisque in dictum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Nunc non blandit massa enim nec dui. Magna ac placerat vestibulum lectus mauris ultrices eros in. Vitae purus faucibus ornare suspendisse sed. Viverra tellus in hac habitasse. Blandit turpis cursus in hac habitasse. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Venenatis tellus in metus vulputate eu scelerisque felis. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Ultricies integer quis auctor elit sed vulputate. Pellentesque id nibh tortor id. Quam adipiscing vitae proin sagittis nisl rhoncus. Neque laoreet suspendisse interdum consectetur libero. Tincidunt dui ut ornare lectus sit amet.</p><p>Turpis egestas sed tempus urna. Dolor purus non enim praesent elementum. Tempus iaculis urna id volutp at lacus laoreet non. Ut eu sem integer vitae justo eget magna fermentum iaculis. Netus et malesuada fames ac. Pellentesque massa placerat duis ultricies. Libero enim sed faucibus turpis in. Ac auctor augue mauris augue neque gravida in fermentum et. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Tincidunt lobortis feugiat vivamus at augue eget. Turpis egestas integer eget aliquet nibh praesent. Nisi lacus sed viverra tellus in. Scelerisque fermentum dui faucibus in ornare quam viverra orci.</p>",
       "signup": true
     }
-  ]
+  ],
+   "calendar": {
+    "weeks": [
+      {
+        "week": [
+           {
+            "day": "27",
+            "datetime": "2020-12-27"
+          },
+          {
+            "day": "28",
+            "datetime": "2020-12-28"
+          },
+          {
+            "day": "29",
+            "datetime": "2020-12-29"
+          },
+          {
+            "day": "30",
+            "datetime": "2020-12-30"
+          },
+          {
+            "day": "31",
+            "datetime": "2020-12-31"
+          },
+          {
+            "day": "01",
+            "datetime": "2021-01-01",
+             "events": [{
+              "view": "calendar",
+              "title": "ALPS Calendar Item",
+              "meta": {
+                  "month": "January",
+                  "day": "1",
+                  "year": "2021",
+                  "start": "3:00 PM",
+                  "end": "5:00 PM",
+                  "city": "Pensacola",
+                  "state": ", Florida"
+                },
+                "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+                "button": {
+                  "text": "View Details",
+                  "align_right": true,
+                  "icon": "icon-arrow-long-right",
+                  "class": "o-button--outline"
+                }
+            }]
+          },
+          {
+            "day": "02",
+            "datetime": "2021-01-02",
+             "events": [{
+              "view": "calendar",
+              "title": "A Different Title Longer Than The Rest",
+              "meta": {
+                  "month": "January",
+                  "day": "2",
+                  "year": "2021",
+                  "start": "3:00 PM",
+                  "end": "5:00 PM",
+                  "city": "San Diego",
+                  "state": ", California"
+                },
+                "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+                "button": {
+                  "text": "View Details",
+                  "align_right": true,
+                  "icon": "icon-arrow-long-right",
+                  "class": "o-button--outline"
+                }
+            }]
+          }
+        ]
+      },
+      {
+        "week": [
+          {
+            "day": "03",
+            "datetime": "2021-01-03"
+          },
+          {
+            "day": "04",
+            "datetime": "2021-01-04"
+          },
+          {
+            "day": "05",
+            "datetime": "2021-01-05"
+          },
+          {
+            "day": "06",
+            "datetime": "2021-01-06",
+            "events": [{
+              "view": "calendar",
+              "title": "ALPS Calendar Item",
+              "meta": {
+                  "month": "January",
+                  "day": "6",
+                  "year": "2021",
+                  "start": "6:00 PM",
+                  "end": "8:00 PM",
+                  "city": "Sprattsville",
+                  "state": ", Maryland"
+                },
+                "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+                "button": {
+                  "text": "View Details",
+                  "align_right": true,
+                  "icon": "icon-arrow-long-right",
+                  "class": "o-button--outline"
+                }
+            }]
+          },
+          {
+            "day": "07",
+            "datetime": "2021-01-07"
+          },
+          {
+            "day": "08",
+            "datetime": "2021-01-08"
+          },
+          {
+            "day": "09",
+            "datetime": "2021-01-09"
+          }
+        ]
+      },
+      {
+        "week": [
+          {
+            "day": "10",
+            "datetime": "2021-01-10",
+             "events": [{
+              "view": "calendar",
+              "title": "ALPS Sample Event",
+              "meta": {
+                  "month": "January",
+                  "day": "10",
+                  "year": "2021",
+                  "start": "8:00 PM",
+                  "end": "11:00 PM",
+                  "city": "Somewhere",
+                  "state": ", Virginia"
+                },
+                "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+                "button": {
+                  "text": "View Details",
+                  "align_right": true,
+                  "icon": "icon-arrow-long-right",
+                  "class": "o-button--outline"
+                }
+            }]
+          },
+          {
+            "day": "11",
+            "datetime": "2021-01-11"
+          },
+          {
+            "day": "12",
+            "datetime": "2021-01-12"
+          },
+          {
+            "day": "13",
+            "datetime": "2021-01-13"
+          },
+          {
+            "day": "14",
+            "datetime": "2021-01-14"
+          },
+          {
+            "day": "15",
+            "datetime": "2021-01-15"
+          },
+          {
+            "day": "16",
+            "datetime": "2021-01-16",
+            "events": [{
+              "view": "calendar",
+              "title": "ALPS Sample Event One",
+              "meta": {
+                  "month": "January",
+                  "day": "16",
+                  "year": "2021",
+                  "start": "8:00 PM",
+                  "end": "11:00 PM",
+                  "city": "Somerville",
+                  "state": ", Massachusetts"
+                },
+                "teaser": "Ac tincidunt vitae semper quis lectus nulla at volutpat. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae congue eu consequat ac felis donec et. Eu scelerisque felis imperdiet proin fermentum leo.",
+                "button": {
+                  "text": "View Details",
+                  "align_right": true,
+                  "icon": "icon-arrow-long-right",
+                  "class": "o-button--outline"
+                }
+            }]
+          }
+        ]
+      },
+      {
+        "week": [
+          {
+            "day": "17",
+            "datetime": "2021-01-17"
+          },
+          {
+            "day": "18",
+            "datetime": "2021-01-18"
+          },
+          {
+            "day": "19",
+            "datetime": "2021-01-19"
+          },
+          {
+            "day": "20",
+            "datetime": "2021-01-20"
+          },
+          {
+            "day": "21",
+            "datetime": "2021-01-21"
+          },
+          {
+            "day": "22",
+            "datetime": "2021-01-22"
+          },
+          {
+            "day": "23",
+            "datetime": "2021-01-23"
+          }
+        ]
+      },
+      {
+        "week": [
+          {
+            "day": "24",
+            "datetime": "2021-01-24"
+          },
+          {
+            "day": "25",
+            "datetime": "2021-01-25"
+          },
+          {
+            "day": "26",
+            "datetime": "2021-01-26"
+          },
+          {
+            "day": "27",
+            "datetime": "2021-01-27"
+          },
+          {
+            "day": "28",
+            "datetime": "2021-01-28"
+          },
+          {
+            "day": "29",
+            "datetime": "2021-01-29"
+          },
+          {
+            "day": "30",
+            "datetime": "2021-01-30"
+          }
+        ]
+      },
+      {
+        "week": [
+          {
+            "day": "31",
+            "datetime": "2021-01-31"
+          },
+          {
+            "day": "01",
+            "datetime": "2021-02-01"
+          },
+          {
+            "day": "02",
+            "datetime": "2021-02-02"
+          },
+          {
+            "day": "03",
+            "datetime": "2021-02-03"
+          },
+          {
+            "day": "04",
+            "datetime": "2021-02-04"
+          },
+          {
+            "day": "05",
+            "datetime": "2021-02-05"
+          },
+          {
+            "day": "06",
+            "datetime": "2021-02-06"
+          }
+        ]
+      }
+    ]
+  }
 }

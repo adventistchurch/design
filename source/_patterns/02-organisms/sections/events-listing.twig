@@ -1,10 +1,15 @@
-{% for month in months %}
-  <h2>{{ month.name }}</h2>
-  <div class="u-spacing">
-  {% for event in month.events %}
-   {% include '@molecules/events/event-block.twig' with event %}
-  {% endfor %}
+{% if months %}
+  <div class="c-events-listing">
+    {% for month in months %}
+      <h2 class="c-events-listing__month u-theme--color--dark">{{ month.name }}</h2>
+      <div class="c-events-listing__list u-spacing">
+      {% for event in month.events %}
+        {% include '@molecules/events/event-block.twig' with event %}
+      {% endfor %}
+      </div>
+    {% endfor %}
+    {% include '@molecules/navigation/pagination.twig' with pager %}
   </div>
-{% endfor %}
+{% endif %}
 
 

@@ -1,0 +1,6 @@
+ <!-- WEEK -->
+<div role="row">
+  {% for days in week %}
+    {% include '@molecules/events/event-calendar-day-block.twig' with days %}
+  {% endfor %}
+</div>
