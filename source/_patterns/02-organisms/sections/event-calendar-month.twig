@@ -43,14 +43,26 @@
       </h3>
     </div>
   </div>
-
-
   {% if calendar %}
-  <div role="rowgroup">
+  <div class="c-calendar-week" role="rowgroup">
     {% for week in calendar.weeks %}
       {% include '@molecules/events/event-calendar-week-block.twig' %}
     {% endfor %}
   </div>
   {% endif %}
-
+  <div class="c-calendar-day__events--mobile">
+    {% for week in calendar.weeks %}
+      {% for day in week %}
+        {% for date in day %}
+          {% if date.when == 'today' %}
+            {% for event in date.events %}
+              <div>
+              {% include "@molecules/events/event-calendar-info.twig" with event %}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </div>
 </div>

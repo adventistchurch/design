@@ -95,30 +95,37 @@
     }
   ],
    "calendar": {
+    "today": "16",
     "weeks": [
       {
         "week": [
            {
+            "when": "past",
             "day": "27",
             "datetime": "2020-12-27"
           },
           {
+            "when": "past",
             "day": "28",
             "datetime": "2020-12-28"
           },
           {
+            "when": "past",
             "day": "29",
             "datetime": "2020-12-29"
           },
           {
+            "when": "past",
             "day": "30",
             "datetime": "2020-12-30"
           },
           {
+            "when": "past",
             "day": "31",
             "datetime": "2020-12-31"
           },
           {
+            "when": "past",
             "day": "01",
             "datetime": "2021-01-01",
              "events": [{
@@ -143,6 +150,7 @@
             }]
           },
           {
+            "when": "past",
             "day": "02",
             "datetime": "2021-01-02",
              "events": [{
@@ -171,18 +179,22 @@
       {
         "week": [
           {
+            "when": "past",
             "day": "03",
             "datetime": "2021-01-03"
           },
           {
+            "when": "past",
             "day": "04",
             "datetime": "2021-01-04"
           },
           {
+            "when": "past",
             "day": "05",
             "datetime": "2021-01-05"
           },
           {
+            "when": "past",
             "day": "06",
             "datetime": "2021-01-06",
             "events": [{
@@ -207,14 +219,17 @@
             }]
           },
           {
+            "when": "past",
             "day": "07",
             "datetime": "2021-01-07"
           },
           {
+            "when": "past",
             "day": "08",
             "datetime": "2021-01-08"
           },
           {
+            "when": "past",
             "day": "09",
             "datetime": "2021-01-09"
           }
@@ -223,6 +238,7 @@
       {
         "week": [
           {
+            "when": "past",
             "day": "10",
             "datetime": "2021-01-10",
              "events": [{
@@ -247,26 +263,32 @@
             }]
           },
           {
+            "when": "past",
             "day": "11",
             "datetime": "2021-01-11"
           },
           {
+            "when": "past",
             "day": "12",
             "datetime": "2021-01-12"
           },
           {
+            "when": "past",
             "day": "13",
             "datetime": "2021-01-13"
           },
           {
+            "when": "past",
             "day": "14",
             "datetime": "2021-01-14"
           },
           {
+            "when": "past",
             "day": "15",
             "datetime": "2021-01-15"
           },
           {
+            "when": "today",
             "day": "16",
             "datetime": "2021-01-16",
             "events": [{
@@ -295,30 +317,37 @@
       {
         "week": [
           {
+            "when": "future",
             "day": "17",
             "datetime": "2021-01-17"
           },
           {
+            "when": "future",
             "day": "18",
             "datetime": "2021-01-18"
           },
           {
+            "when": "future",
             "day": "19",
             "datetime": "2021-01-19"
           },
           {
+            "when": "future",
             "day": "20",
             "datetime": "2021-01-20"
           },
           {
+            "when": "future",
             "day": "21",
             "datetime": "2021-01-21"
           },
           {
+            "when": "future",
             "day": "22",
             "datetime": "2021-01-22"
           },
           {
+            "when": "future",
             "day": "23",
             "datetime": "2021-01-23"
           }
@@ -327,30 +356,37 @@
       {
         "week": [
           {
+            "when": "future",
             "day": "24",
             "datetime": "2021-01-24"
           },
           {
+            "when": "future",
             "day": "25",
             "datetime": "2021-01-25"
           },
           {
+            "when": "future",
             "day": "26",
             "datetime": "2021-01-26"
           },
           {
+            "when": "future",
             "day": "27",
             "datetime": "2021-01-27"
           },
           {
+            "when": "future",
             "day": "28",
             "datetime": "2021-01-28"
           },
           {
+            "when": "future",
             "day": "29",
             "datetime": "2021-01-29"
           },
           {
+            "when": "future",
             "day": "30",
             "datetime": "2021-01-30"
           }
@@ -359,6 +395,7 @@
       {
         "week": [
           {
+            "when": "future",
             "day": "31",
             "datetime": "2021-01-31"
           },
@@ -367,22 +404,27 @@
             "datetime": "2021-02-01"
           },
           {
+            "when": "future",
             "day": "02",
             "datetime": "2021-02-02"
           },
           {
+            "when": "future",
             "day": "03",
             "datetime": "2021-02-03"
           },
           {
+            "when": "future",
             "day": "04",
             "datetime": "2021-02-04"
           },
           {
+            "when": "future",
             "day": "05",
             "datetime": "2021-02-05"
           },
           {
+            "when": "future",
             "day": "06",
             "datetime": "2021-02-06"
           }

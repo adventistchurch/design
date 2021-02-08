@@ -1,5 +1,5 @@
 {% for date in days %}
-<div class="tribe-events-calendar-month__day tribe-events-calendar-month__day--past" role="gridcell" {% if date.events %} data-event-day {% endif %}>
+<div class="c-alps-calendar__day {% if date.when %}c-alps-calendar__day--{{date.when}}{% endif %}" role="gridcell" {% if date.events %} data-event-day {% endif %}>
   <button>
     <h3>
       {% if date.events %}
@@ -14,7 +14,7 @@
       <time datetime="{{ date.datetime }}">{{ date.day }}</time>
     </h3>
   </button>
-  <div>
+  <div class="c-alps-calendar__event">
     <h3>
       {% if date.events %}
         {% if date.events|length == 1 %}
@@ -25,51 +25,33 @@
       {% else %}
         <span>0 events,</span>
       {% endif %}
-      <time datetime="{{ date.datetime }}">{{ date.day }}</time>
+      <time class="c-calendar-event__time" datetime="{{ date.datetime }}">{{ date.day }}</time>
     </h3>
+    {% if date.events %}
+      <div class="c-calendar-event__marker"></div>
+    {% endif %}
     {% for event in date.events %}
-      {% if event.title %}
-         <p class="u-font--secondary--s">
-          {% if event.meta.start %}
-            {{ event.meta.start }}
-          {% endif %}
-          {% if event.meta.end %}
-            &mdash; {{ event.meta.end }}
-          {% endif %}
-        </p>
-        <p class="c-calendar-event__title">{{ event.title }}</p>
-      {% endif %}
+      <div class="c-calendar-event__meta">
+        {% if event.title %}
+          <p class="u-font--secondary--s">
+            {% if event.meta.start %}
+              {{ event.meta.start }}
+            {% endif %}
+            {% if event.meta.end %}
+              &mdash; {{ event.meta.end }}
+            {% endif %}
+          </p>
+          <p class="c-calendar-event__title">{{ event.title }}</p>
+        {% endif %}
+      </div>
     {% endfor %}
   </div>
   {% for event in date.events %}
-  <div class="c-calendar-info-hover u-border--left">
-    <div class="c-calendar-info-hover__inner">
-      {% if event.meta %}
-        <p class="c-event--calendar-item__meta u-font--secondary--xs">
-          {{ event.meta.month }} {{ event.meta.day }}
-          {% if event.meta.start %},
-            {{ event.meta.start }}
-          {% endif %}
-          {% if event.meta.end %}
-            &mdash; {{ event.meta.end }}
-          {% endif %}
-        </p>
-      {% endif %}
-      {% if event.title %}
-        <h2 class="c-event--calendar-item__heading u-font--primary--m u-theme--color--dark">{{ event.title }}</h2>
-      {% endif %}
-      {% if event.meta.city %}
-        <p class="c-event--calendar-item__meta"> {{ event.meta.city }}{{ event.meta.state }}</p>
-      {% endif %}
-      {% if event.teaser %}
-        <div class="c-calendar-info-hover__teaser u-font--secondary--s">{{ event.teaser }}</div>
-      {% endif %}
-      <p class="c-event--calendar-item__button">
-        {% set button_default = event.button %}
-        {% include '@atoms/buttons/button.twig' %}
-      </p>
+    <div class="c-calendar-info-hover u-border--left">
+      <div class="c-calendar-info-hover__inner">
+       {% include "@molecules/events/event-calendar-info.twig" %}
+      </div>
     </div>
-  </div>
   {% endfor %}
 </div>
 {% endfor %}

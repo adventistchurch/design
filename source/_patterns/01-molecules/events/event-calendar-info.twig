@@ -1,0 +1,26 @@
+ {% if event %}
+  {% if event.meta %}
+    <p class="c-event--calendar-item__meta u-font--secondary--xs">
+      {{ event.meta.month }} {{ event.meta.day }}
+      {% if event.meta.start %},
+        {{ event.meta.start }}
+      {% endif %}
+      {% if event.meta.end %}
+        &mdash; {{ event.meta.end }}
+      {% endif %}
+    </p>
+  {% endif %}
+  {% if event.title %}
+    <h2 class="c-event--calendar-item__heading u-font--primary--m u-theme--color--dark">{{ event.title }}</h2>
+  {% endif %}
+  {% if event.meta.city %}
+    <p class="c-event--calendar-item__meta"> {{ event.meta.city }}{{ event.meta.state }}</p>
+  {% endif %}
+  {% if event.teaser %}
+    <div class="c-calendar-info-hover__teaser u-font--secondary--s">{{ event.teaser }}</div>
+  {% endif %}
+  <p class="c-event--calendar-item__button">
+    {% set button_default = event.button %}
+    {% include '@atoms/buttons/button.twig' %}
+  </p>
+{% endif %}

@@ -28,6 +28,15 @@
   margin-right: auto;
 }
 
+/**
+ * Absolute center content within itself
+ */
+
+@mixin u-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /**
  * Transition

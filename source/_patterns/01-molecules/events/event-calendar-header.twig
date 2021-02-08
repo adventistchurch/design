@@ -1,0 +1,937 @@
+<header class="tribe-events-header tribe-events-header--has-event-search" style="display:none">
+  <div class="tribe-events-header__events-bar tribe-events-c-events-bar tribe-events-c-events-bar--border" data-js="tribe-events-events-bar">
+    <h2 class="is-hidden tribe-common-a11y-visual-hide">Events Search and Views Navigation</h2>
+    <button class="tribe-events-c-events-bar__search-button" data-js="tribe-events-search-button">
+      <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--search tribe-events-c-events-bar__search-button-icon-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.164 10.133L16 14.97 14.969 16l-4.836-4.836a6.225 6.225 0 01-3.875 1.352 6.24 6.24 0 01-4.427-1.832A6.272 6.272 0 010 6.258 6.24 6.24 0 011.831 1.83 6.272 6.272 0 016.258 0c1.67 0 3.235.658 4.426 1.831a6.272 6.272 0 011.832 4.427c0 1.422-.48 2.773-1.352 3.875zM6.258 1.458c-1.28 0-2.49.498-3.396 1.404-1.866 1.867-1.866 4.925 0 6.791a4.774 4.774 0 003.396 1.405c1.28 0 2.489-.498 3.395-1.405 1.867-1.866 1.867-4.924 0-6.79a4.774 4.774 0 00-3.395-1.405z"></path>
+      </svg>
+      <span class="tribe-events-c-events-bar__search-button-text is-hidden tribe-common-a11y-visual-hide">
+        Search </span>
+    </button>
+
+    <div class="tribe-events-c-events-bar__search-container" id="tribe-events-search-container" data-js="tribe-events-search-container">
+      <div class="tribe-events-c-events-bar__search" id="tribe-events-events-bar-search" data-js="tribe-events-events-bar-search">
+        <form class="tribe-events-c-search tribe-events-c-events-bar__search-form" method="get" data-js="tribe-events-view-form" role="search">
+          <div class="tribe-events-c-search__input-group">
+            <div class="tribe-common-form-control-text tribe-events-c-search__input-control tribe-events-c-search__input-control--keyword" data-js="tribe-events-events-bar-input-control">
+              <label class="tribe-common-form-control-text__label" for="tribe-events-events-bar-keyword">
+                Enter Keyword. Search for Events by Keyword.
+              </label>
+              <input class="tribe-common-form-control-text__input tribe-events-c-search__input" data-js="tribe-events-events-bar-input-control-input" type="text" id="tribe-events-events-bar-keyword" name="tribe-events-views[tribe-bar-search]" value="" placeholder="Search for events" aria-label="Enter Keyword. Search for events by Keyword.">
+              <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--search tribe-events-c-search__input-control-icon-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.164 10.133L16 14.97 14.969 16l-4.836-4.836a6.225 6.225 0 01-3.875 1.352 6.24 6.24 0 01-4.427-1.832A6.272 6.272 0 010 6.258 6.24 6.24 0 011.831 1.83 6.272 6.272 0 016.258 0c1.67 0 3.235.658 4.426 1.831a6.272 6.272 0 011.832 4.427c0 1.422-.48 2.773-1.352 3.875zM6.258 1.458c-1.28 0-2.49.498-3.396 1.404-1.866 1.867-1.866 4.925 0 6.791a4.774 4.774 0 003.396 1.405c1.28 0 2.489-.498 3.395-1.405 1.867-1.866 1.867-4.924 0-6.79a4.774 4.774 0 00-3.395-1.405z"></path>
+              </svg>
+            </div>
+            <div class="tribe-common-form-control-text tribe-events-c-search__input-control tribe-events-c-search__input-control--location" data-js="tribe-events-events-bar-input-control">
+              <label class="tribe-common-form-control-text__label" for="tribe-events-events-bar-location">
+                Enter Location. Search for Events by Location.
+              </label>
+              <input class="tribe-common-form-control-text__input tribe-events-c-search__input tribe-events-c-search__input--icon" data-js="tribe-events-events-bar-input-control-input" type="text" id="tribe-events-events-bar-location" name="tribe-events-views[tribe-bar-location]" value="" placeholder="In a location" aria-label="Enter Location. Search for Events by Location.">
+              <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--location tribe-events-c-search__input-control-icon-svg" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.682 1.548a5.166 5.166 0 00-7.375 0C-3.073 5.984 4.959 15.36 4.994 15.36c.051-.001 8.092-9.35 3.688-13.812zM4.994 2.833c1.27 0 2.301 1.043 2.301 2.331 0 1.287-1.03 2.33-2.301 2.33-1.272 0-2.3-1.043-2.3-2.33 0-1.287 1.028-2.331 2.3-2.331z"></path>
+              </svg>
+            </div>
+          </div>
+          <button class="tribe-common-c-btn tribe-events-c-search__button" type="submit" name="submit-bar">
+            Find Events
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="tribe-events-c-events-bar__filter-button-container">
+      <button class="tribe-events-c-events-bar__filter-button tribe-events-c-events-bar__filter-button--active" aria-controls="tribe-filter-bar--60637c42-7320-4754-907e-156645d67906" aria-expanded="true" data-js="tribe-events-filter-button">
+        <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--filter tribe-events-c-events-bar__filter-button-icon" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.44 1a.775.775 0 10-1.55 0v1.89H1a.775.775 0 000 1.55h1.89v1.893a.775.775 0 001.55 0V4.44H17a.775.775 0 000-1.55H4.44V1zM.224 14.332c0-.428.347-.775.775-.775h12.56v-1.893a.775.775 0 011.55 0v1.893h1.89a.775.775 0 010 1.55h-1.89v1.89a.775.775 0 01-1.55 0v-1.89H.998a.775.775 0 01-.775-.775z"></path>
+        </svg>
+        <span class="tribe-events-c-events-bar__filter-button-text tribe-common-b2 is-hidden tribe-common-a11y-visual-hide">Hide filters</span>
+        <span class="tribe_events_filters_show_filters_info" data-tooltip="Available as a paid add-on">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div class="tribe-events-c-events-bar__views">
+      <h3 class="is-hidden tribe-common-a11y-visual-hide">Event Views Navigation</h3>
+      <div class="tribe-events-c-view-selector tribe-events-c-view-selector--labels" data-js="tribe-events-view-selector">
+        <button class="tribe-events-c-view-selector__button" data-js="tribe-events-view-selector-button" aria-expanded="false" aria-controls="tribe-events-view-selector-content">
+          <span class="tribe-events-c-view-selector__button-icon">
+            <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--month tribe-events-c-view-selector__button-icon-svg" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 .991v17.04c0 .236.162.428.361.428h17.175c.2 0 .361-.192.361-.429V.991c0-.237-.162-.428-.361-.428H.36C.161.563 0 .754 0 .99zm.985.803H16.89v2.301H.985v-2.3zM16.89 5.223H.985v12H16.89v-12zM6.31 7.366v.857c0 .237.192.429.429.429h.857a.429.429 0 00.428-.429v-.857a.429.429 0 00-.428-.429H6.74a.429.429 0 00-.429.429zm3.429.857v-.857c0-.237.191-.429.428-.429h.857c.237 0 .429.192.429.429v.857a.429.429 0 01-.429.429h-.857a.429.429 0 01-.428-.429zm3.428-.857v.857c0 .237.192.429.429.429h.857a.429.429 0 00.428-.429v-.857a.429.429 0 00-.428-.429h-.857a.429.429 0 00-.429.429zm-6.857 4.286v-.858c0-.236.192-.428.429-.428h.857c.236 0 .428.192.428.428v.858a.429.429 0 01-.428.428H6.74a.429.429 0 01-.429-.428zm3.429-.858v.858c0 .236.191.428.428.428h.857a.429.429 0 00.429-.428v-.858a.429.429 0 00-.429-.428h-.857a.428.428 0 00-.428.428zm3.428.858v-.858c0-.236.192-.428.429-.428h.857c.236 0 .428.192.428.428v.858a.429.429 0 01-.428.428h-.857a.429.429 0 01-.429-.428zm-10.286-.858v.858c0 .236.192.428.429.428h.857a.429.429 0 00.429-.428v-.858a.429.429 0 00-.429-.428h-.857a.429.429 0 00-.429.428zm0 4.286v-.857c0-.237.192-.429.429-.429h.857c.237 0 .429.192.429.429v.857a.429.429 0 01-.429.429h-.857a.429.429 0 01-.429-.429zm3.429-.857v.857c0 .237.192.429.429.429h.857a.429.429 0 00.428-.429v-.857a.429.429 0 00-.428-.429H6.74a.429.429 0 00-.429.429zm3.429.857v-.857c0-.237.191-.429.428-.429h.857c.237 0 .429.192.429.429v.857a.429.429 0 01-.429.429h-.857a.429.429 0 01-.428-.429z" class="tribe-common-c-svgicon__svg-fill"></path>
+            </svg>
+          </span>
+          <span class="tribe-events-c-view-selector__button-text is-hidden tribe-common-a11y-visual-hide">Month</span>
+          <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-down tribe-events-c-view-selector__button-icon-caret-svg" viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.008.609L5 4.6 8.992.61l.958.958L5 6.517.05 1.566l.958-.958z" class="tribe-common-c-svgicon__svg-fill"></path>
+          </svg>
+        </button>
+        <div class="tribe-events-c-view-selector__content" id="tribe-events-view-selector-content" data-js="tribe-events-view-selector-list-container" aria-hidden="true">
+          <ul class="tribe-events-c-view-selector__list">
+            <li class="tribe-events-c-view-selector__list-item tribe-events-c-view-selector__list-item--list">
+              <a href="https://demo.theeventscalendar.com/events/list/?hide_subsequent_recurrences=1&amp;tribe-bar-date=2021-01-01" class="tribe-events-c-view-selector__list-item-link" data-js="tribe-events-view-link">
+                <span class="tribe-events-c-view-selector__list-item-icon">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--list tribe-events-c-view-selector__list-item-icon-svg" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.451.432V17.6c0 .238.163.432.364.432H18.12c.2 0 .364-.194.364-.432V.432c0-.239-.163-.432-.364-.432H.815c-.2 0-.364.193-.364.432zm.993.81h16.024V3.56H1.444V1.24zM17.468 3.56H1.444v13.227h16.024V3.56z" class="tribe-common-c-svgicon__svg-fill"></path>
+                    <g clip-path="url(#clip0)" class="tribe-common-c-svgicon__svg-fill">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.831 4.912v1.825c0 .504.409.913.913.913h1.825a.913.913 0 00.912-.913V4.912A.913.913 0 0014.57 4h-1.825a.912.912 0 00-.913.912z"></path>
+                      <path d="M8.028 7.66a.449.449 0 00.446-.448v-.364c0-.246-.2-.448-.446-.448h-4.13a.449.449 0 00-.447.448v.364c0 .246.201.448.447.448h4.13zM9.797 5.26a.449.449 0 00.447-.448v-.364c0-.246-.201-.448-.447-.448h-5.9a.449.449 0 00-.446.448v.364c0 .246.201.448.447.448h5.9z"></path>
+                    </g>
+                    <g clip-path="url(#clip1)" class="tribe-common-c-svgicon__svg-fill">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.831 10.912v1.825c0 .505.409.913.913.913h1.825a.913.913 0 00.912-.912v-1.825A.913.913 0 0014.57 10h-1.825a.912.912 0 00-.913.912z"></path>
+                      <path d="M8.028 13.66a.449.449 0 00.446-.448v-.364c0-.246-.2-.448-.446-.448h-4.13a.449.449 0 00-.447.448v.364c0 .246.201.448.447.448h4.13zM9.797 11.26a.449.449 0 00.447-.448v-.364c0-.246-.201-.448-.447-.448h-5.9a.449.449 0 00-.446.448v.364c0 .246.201.448.447.448h5.9z"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <path transform="translate(3.451 4)" d="M0 0h13v4H0z"></path>
+                      </clipPath>
+                      <clipPath id="clip1">
+                        <path transform="translate(3.451 10)" d="M0 0h13v4H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <span class="tribe-events-c-view-selector__list-item-text">List</span>
+              </a>
+            </li>
+            <li class="tribe-events-c-view-selector__list-item tribe-events-c-view-selector__list-item--month tribe-events-c-view-selector__list-item--active">
+              <a href="https://demo.theeventscalendar.com/events/month/2021-01/?hide_subsequent_recurrences=1" class="tribe-events-c-view-selector__list-item-link" data-js="tribe-events-view-link">
+                <span class="tribe-events-c-view-selector__list-item-icon">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--month tribe-events-c-view-selector__list-item-icon-svg" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 .991v17.04c0 .236.162.428.361.428h17.175c.2 0 .361-.192.361-.429V.991c0-.237-.162-.428-.361-.428H.36C.161.563 0 .754 0 .99zm.985.803H16.89v2.301H.985v-2.3zM16.89 5.223H.985v12H16.89v-12zM6.31 7.366v.857c0 .237.192.429.429.429h.857a.429.429 0 00.428-.429v-.857a.429.429 0 00-.428-.429H6.74a.429.429 0 00-.429.429zm3.429.857v-.857c0-.237.191-.429.428-.429h.857c.237 0 .429.192.429.429v.857a.429.429 0 01-.429.429h-.857a.429.429 0 01-.428-.429zm3.428-.857v.857c0 .237.192.429.429.429h.857a.429.429 0 00.428-.429v-.857a.429.429 0 00-.428-.429h-.857a.429.429 0 00-.429.429zm-6.857 4.286v-.858c0-.236.192-.428.429-.428h.857c.236 0 .428.192.428.428v.858a.429.429 0 01-.428.428H6.74a.429.429 0 01-.429-.428zm3.429-.858v.858c0 .236.191.428.428.428h.857a.429.429 0 00.429-.428v-.858a.429.429 0 00-.429-.428h-.857a.428.428 0 00-.428.428zm3.428.858v-.858c0-.236.192-.428.429-.428h.857c.236 0 .428.192.428.428v.858a.429.429 0 01-.428.428h-.857a.429.429 0 01-.429-.428zm-10.286-.858v.858c0 .236.192.428.429.428h.857a.429.429 0 00.429-.428v-.858a.429.429 0 00-.429-.428h-.857a.429.429 0 00-.429.428zm0 4.286v-.857c0-.237.192-.429.429-.429h.857c.237 0 .429.192.429.429v.857a.429.429 0 01-.429.429h-.857a.429.429 0 01-.429-.429zm3.429-.857v.857c0 .237.192.429.429.429h.857a.429.429 0 00.428-.429v-.857a.429.429 0 00-.428-.429H6.74a.429.429 0 00-.429.429zm3.429.857v-.857c0-.237.191-.429.428-.429h.857c.237 0 .429.192.429.429v.857a.429.429 0 01-.429.429h-.857a.429.429 0 01-.428-.429z" class="tribe-common-c-svgicon__svg-fill"></path>
+                  </svg>
+                </span>
+                <span class="tribe-events-c-view-selector__list-item-text">Month</span>
+              </a>
+            </li>
+            <li class="tribe-events-c-view-selector__list-item tribe-events-c-view-selector__list-item--day">
+              <a href="https://demo.theeventscalendar.com/events/2021-01-01/?hide_subsequent_recurrences=1" class="tribe-events-c-view-selector__list-item-link" data-js="tribe-events-view-link">
+                <span class="tribe-events-c-view-selector__list-item-icon">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--day tribe-events-c-view-selector__list-item-icon-svg" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.363 17.569V.43C.363.193.526 0 .726 0H18c.201 0 .364.193.364.431V17.57c0 .238-.163.431-.364.431H.726c-.2 0-.363-.193-.363-.431zm16.985-16.33H1.354v2.314h15.994V1.24zM1.354 4.688h15.994v12.07H1.354V4.687zm11.164 9.265v-1.498c0-.413.335-.748.748-.748h1.498c.413 0 .748.335.748.748v1.498a.749.749 0 01-.748.748h-1.498a.749.749 0 01-.748-.748z" class="tribe-common-c-svgicon__svg-fill"></path>
+                  </svg>
+                </span>
+                <span class="tribe-events-c-view-selector__list-item-text">Day</span>
+              </a>
+            </li>
+            <li class="tribe-events-c-view-selector__list-item tribe-events-c-view-selector__list-item--photo">
+              <a href="https://demo.theeventscalendar.com/events/photo/2021-01-01/?hide_subsequent_recurrences=1" class="tribe-events-c-view-selector__list-item-link" data-js="tribe-events-view-link">
+                <span class="tribe-events-c-view-selector__list-item-icon">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--photo tribe-events-c-view-selector__list-item-icon-svg" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.536 0H.539a.484.484 0 00-.495.483v17.034c0 .27.218.483.495.483h16.997a.484.484 0 00.495-.483V.483A.484.484 0 0017.536 0zm-.515.986V13.73l-1.907-2.938c-.555-.58-1.584-.58-2.139 0l-1.327 1.41-3.841-4.31a1.548 1.548 0 00-1.169-.502c-.435 0-.871.193-1.148.522l-4.436 4.929V.986h15.967zM1.054 14.329v2.705h15.987v-1.835l-2.66-3.73c-.178-.175-.495-.175-.653 0l-1.703 1.816c-.1.097-.218.174-.377.155a.569.569 0 01-.376-.174L7.054 8.53a.577.577 0 00-.416-.174.504.504 0 00-.396.174l-5.188 5.798z" class="tribe-common-c-svgicon__svg-fill"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.682 5.875c0 1.043-.825 1.875-1.82 1.875-.993 0-1.818-.832-1.818-1.875C11.044 4.83 11.85 4 12.863 4c1.012 0 1.819.831 1.819 1.875zm-.957 0c0-.483-.393-.89-.862-.89s-.863.407-.863.89c0 .483.394.889.863.889s.862-.406.862-.89z" class="tribe-common-c-svgicon__svg-fill"></path>
+                  </svg>
+                </span>
+                <span class="tribe-events-c-view-selector__list-item-text">
+                  Photo </span>
+              </a>
+            </li>
+            <li class="tribe-events-c-view-selector__list-item tribe-events-c-view-selector__list-item--week">
+              <a href="https://demo.theeventscalendar.com/events/week/2021-01-01/?hide_subsequent_recurrences=1" class="tribe-events-c-view-selector__list-item-link" data-js="tribe-events-view-link">
+                <span class="tribe-events-c-view-selector__list-item-icon">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--week tribe-events-c-view-selector__list-item-icon-svg" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.363.431V17.57c0 .238.163.431.363.431H18c.201 0 .364-.193.364-.431V.43c0-.238-.163-.431-.364-.431H.726c-.2 0-.363.193-.363.431zm.99.808h15.995v2.314H1.354V1.24zm15.995 3.449H1.354v12.07h15.994V4.687zM6.71 10.29v.862c0 .239.193.431.431.431h.862a.431.431 0 00.431-.43v-.863a.431.431 0 00-.43-.43H7.14a.431.431 0 00-.43.43zm3.448.862v-.862c0-.238.193-.43.431-.43h.862c.238 0 .431.192.431.43v.862a.431.431 0 01-.43.431h-.863a.431.431 0 01-.43-.43zm3.449-.862v.862c0 .239.193.431.43.431h.863a.431.431 0 00.43-.43v-.863a.431.431 0 00-.43-.43h-.862a.431.431 0 00-.431.43zm-10.345.862v-.862c0-.238.193-.43.43-.43h.863c.238 0 .43.192.43.43v.862a.431.431 0 01-.43.431h-.862a.431.431 0 01-.431-.43z" class="tribe-common-c-svgicon__svg-fill"></path>
+                  </svg> </span>
+                <span class="tribe-events-c-view-selector__list-item-text">
+                  Week </span>
+              </a>
+            </li>
+            <li class="tribe-events-c-view-selector__list-item tribe-events-c-view-selector__list-item--map">
+              <a href="https://demo.theeventscalendar.com/events/map/?hide_subsequent_recurrences=1&amp;tribe-bar-date=2021-01-01" class="tribe-events-c-view-selector__list-item-link" data-js="tribe-events-view-link">
+                <span class="tribe-events-c-view-selector__list-item-icon">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--map tribe-events-c-view-selector__list-item-icon-svg" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.308 7.726c0 2.27-3.66 6.807-3.816 6.999-.04.05-.1.078-.161.078a.208.208 0 01-.16-.078c-.157-.192-3.817-4.729-3.817-6.999 0-2.333 1.784-4.232 3.977-4.232 2.193 0 3.977 1.899 3.977 4.232zm-3.977-3.78c-1.959 0-3.552 1.696-3.552 3.78 0 1.849 2.839 5.59 3.552 6.5.713-.91 3.552-4.652 3.552-6.5 0-2.084-1.593-3.78-3.552-3.78z" class="tribe-common-c-svgicon__svg-fill"></path>
+                    <path d="M9.492 14.725l.271.22-.271-.22zm-.322 0l-.272.22.272-.22zm.16-.499l-.275.216.276.352.275-.352-.275-.216zm.434.72a35.15 35.15 0 001.988-2.75c.472-.729.944-1.53 1.3-2.299.35-.759.606-1.525.606-2.171h-.7c0 .49-.201 1.141-.542 1.878-.336.726-.789 1.497-1.251 2.21a34.437 34.437 0 01-1.945 2.69l.544.441zm-.433.207c.172 0 .329-.08.432-.207l-.543-.442a.143.143 0 01.11-.05v.7zm-.433-.207c.104.128.261.207.433.207v-.7c.048 0 .088.023.11.051l-.543.442zm-3.894-7.22c0 .646.256 1.412.606 2.171.356.769.828 1.57 1.3 2.298a35.153 35.153 0 001.988 2.75l.544-.44a34.442 34.442 0 01-1.945-2.69c-.462-.714-.915-1.485-1.251-2.211-.34-.737-.542-1.389-.542-1.878h-.7zM9.33 3.144c-2.407 0-4.327 2.076-4.327 4.582h.7c0-2.161 1.647-3.882 3.627-3.882v-.7zm4.327 4.582c0-2.506-1.92-4.582-4.327-4.582v.7c1.98 0 3.627 1.721 3.627 3.882h.7zm-7.53 0c0-1.912 1.458-3.43 3.203-3.43v-.7c-2.172 0-3.902 1.873-3.902 4.13h.7zm3.478 6.285a35.082 35.082 0 01-2.022-2.868 15.842 15.842 0 01-1.03-1.891c-.273-.613-.425-1.139-.425-1.526h-.7c0 .537.202 1.173.485 1.81.286.645.672 1.33 1.076 1.977a35.767 35.767 0 002.065 2.93l.551-.432zm2.927-6.285c0 .387-.153.912-.425 1.525a15.841 15.841 0 01-1.03 1.891 35.097 35.097 0 01-2.023 2.869l.551.431c.36-.46 1.257-1.633 2.065-2.93.405-.647.79-1.331 1.077-1.977.283-.636.485-1.272.485-1.809h-.7zm-3.202-3.43c1.745 0 3.202 1.518 3.202 3.43h.7c0-2.257-1.73-4.13-3.902-4.13v.7z" class="tribe-common-c-svgicon__svg-fill"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.331 6.321c.742 0 1.346.634 1.346 1.414 0 .78-.604 1.414-1.346 1.414-.742 0-1.346-.635-1.346-1.414 0-.78.604-1.414 1.346-1.414zm0 .267c-.602 0-1.092.514-1.092 1.147 0 .632.49 1.147 1.092 1.147.602 0 1.093-.515 1.093-1.147 0-.633-.49-1.147-1.093-1.147z" class="tribe-common-c-svgicon__svg-fill"></path>
+                    <path d="M11.027 7.735c0-.957-.744-1.764-1.696-1.764v.7c.533 0 .996.461.996 1.064h.7zM9.331 9.499c.952 0 1.696-.808 1.696-1.764h-.7c0 .602-.463 1.064-.996 1.064v.7zM7.635 7.735c0 .956.745 1.764 1.696 1.764v-.7c-.533 0-.996-.462-.996-1.064h-.7zM9.33 5.97c-.951 0-1.696.807-1.696 1.764h.7c0-.603.463-1.064.996-1.064v-.7zM8.59 7.735c0-.456.349-.797.742-.797v-.7c-.812 0-1.442.687-1.442 1.497h.7zm.742.797c-.393 0-.742-.341-.742-.797h-.7c0 .81.63 1.497 1.442 1.497v-.7zm.742-.797c0 .455-.349.797-.742.797v.7c.812 0 1.443-.688 1.443-1.497h-.7zm-.742-.797c.393 0 .742.341.742.797h.7c0-.81-.63-1.497-1.442-1.497v.7z" class="tribe-common-c-svgicon__svg-fill"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.363.431V17.57c0 .238.163.431.363.431H18c.201 0 .364-.193.364-.431V.43c0-.238-.163-.431-.364-.431H.726c-.2 0-.363.193-.363.431zm.99.808h15.995v2.314H1.354V1.24zm0 2.314h15.995v13.204H1.354V3.553z" class="tribe-common-c-svgicon__svg-fill"></path>
+                  </svg> </span>
+                <span class="tribe-events-c-view-selector__list-item-text">
+                  Map </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tribe-filter-bar tribe-filter-bar--horizontal tribe-filter-bar--open" id="tribe-filter-bar--60637c42-7320-4754-907e-156645d67906" data-js="tribe-filter-bar" data-mobile-initial-state-control="true" aria-hidden="false">
+    <form class="tribe-filter-bar__form" method="post" action="" aria-labelledby="tribe-filter-bar__form-heading--60637c42-7320-4754-907e-156645d67906" aria-describedby="tribe-filter-bar__form-description--60637c42-7320-4754-907e-156645d67906">
+
+      <h2 class="tribe-filter-bar__form-heading tribe-common-h5 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide" id="tribe-filter-bar__form-heading--60637c42-7320-4754-907e-156645d67906">
+        Filters </h2>
+
+      <p class="tribe-filter-bar__form-description is-hidden tribe-common-a11y-visual-hide" id="tribe-filter-bar__form-description--60637c42-7320-4754-907e-156645d67906">
+        Changing any of the form inputs will cause the list of events to refresh with the filtered results. </p>
+
+
+      <div class="tribe-filter-bar__actions">
+        <button class="tribe-filter-bar__action-done tribe-common-c-btn-border tribe-common-c-btn-border--secondary" data-js="tribe-filter-bar__action-done" type="button" aria-controls="tribe-filter-bar--60637c42-7320-4754-907e-156645d67906" aria-expanded="true">
+          Done </button>
+        <button class="tribe-filter-bar-c-clear-button tribe-common-c-btn-border tribe-common-c-btn-border--alt tribe-filter-bar__action-clear" type="reset" data-js="tribe-filter-bar-c-clear-button">
+          <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--reset tribe-filter-bar-c-clear-button__reset-icon" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.268 7.5a5.633 5.633 0 11-.886-3.033M11.4 1v3.467H7.934" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="tribe-filter-bar-c-clear-button__text">
+            Clear </span>
+        </button>
+      </div>
+
+      <div class="tribe-filter-bar__filters-container" data-js="tribe-filter-bar-filters-container" style="transform: translateX(0px);">
+        <div class="tribe-filter-bar__filters">
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--radio">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_events_virtual-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_events_virtual-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Virtual Events</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_events_virtual-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_events_virtual-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_events_virtual-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Virtual Events </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-radio tribe-common-form-control-radio" data-js="tribe-filter-bar-c-radio">
+                    <input class="tribe-common-form-control-radio__input" id="show-all-events" name="tribe_filterbar_events_virtual" type="radio" value="all" data-js="tribe-filter-bar-c-radio-input">
+                    <label class="tribe-common-form-control-radio__label" for="show-all-events">
+                      Show all events </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-radio tribe-common-form-control-radio" data-js="tribe-filter-bar-c-radio">
+                    <input class="tribe-common-form-control-radio__input" id="show-only-virtual-events" name="tribe_filterbar_events_virtual" type="radio" value="yes" data-js="tribe-filter-bar-c-radio-input">
+                    <label class="tribe-common-form-control-radio__label" for="show-only-virtual-events">
+                      Show only virtual events </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-radio tribe-common-form-control-radio" data-js="tribe-filter-bar-c-radio">
+                    <input class="tribe-common-form-control-radio__input" id="show-only-non-virtual-events" name="tribe_filterbar_events_virtual" type="radio" value="no" data-js="tribe-filter-bar-c-radio-input">
+                    <label class="tribe-common-form-control-radio__label" for="show-only-non-virtual-events">
+                      Show only non-virtual events </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--checkbox">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_featured-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_featured-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Featured Events</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_featured-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_featured-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_featured-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Featured Events </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="show-featured-events-only" name="tribe_featuredevent[]" type="checkbox" value="1" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="show-featured-events-only">
+                      Show featured events only </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--dropdown">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_category-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_category-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Event Category</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_category-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_category-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_category-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Event Category </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-dropdown">
+                    <input class="tribe-filter-bar-c-dropdown__input tribe-dropdown-created select2-hidden-accessible" id="filterbar_category" data-js="tribe-filter-bar-c-dropdown-input" name="tribe_eventcategory[]" type="hidden" value="" data-allow-html="" data-dropdown-css-width="false" data-options="[{&quot;text&quot;:&quot;Event with Tickets&quot;,&quot;id&quot;:&quot;36&quot;,&quot;value&quot;:36},{&quot;text&quot;:&quot;Farmer's Market&quot;,&quot;id&quot;:&quot;19&quot;,&quot;value&quot;:19},{&quot;text&quot;:&quot;Food&quot;,&quot;id&quot;:&quot;22&quot;,&quot;value&quot;:22},{&quot;text&quot;:&quot;Kids&quot;,&quot;id&quot;:&quot;24&quot;,&quot;value&quot;:24},{&quot;text&quot;:&quot;Live Events&quot;,&quot;id&quot;:&quot;35&quot;,&quot;value&quot;:35},{&quot;text&quot;:&quot;Music&quot;,&quot;id&quot;:&quot;26&quot;,&quot;value&quot;:26},{&quot;text&quot;:&quot;Non-profit&quot;,&quot;id&quot;:&quot;27&quot;,&quot;value&quot;:27},{&quot;text&quot;:&quot;Online Events&quot;,&quot;id&quot;:&quot;31&quot;,&quot;value&quot;:31},{&quot;text&quot;:&quot;Recurring Events&quot;,&quot;id&quot;:&quot;34&quot;,&quot;value&quot;:34}]" data-attach-container="" placeholder="Select" style="width: 100%;" tabindex="-1" aria-hidden="true"><span class="select2 select2-container select2-container--default select2-container--below tribe-filter-bar-c-dropdown__input tribe-dropdown-created select2-container--open" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-filterbar_category-container" role="combobox" aria-activedescendant="bcr3-result-6rd7-36"><span class="select2-selection__rendered" id="select2-filterbar_category-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"><span class="select2-selection__choice__text">Select</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"><span class="select2-dropdown select2-dropdown--below" dir="ltr"><span class="select2-search select2-search--dropdown select2-search--hide"><input class="select2-search__field" type="text" tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-activedescendant="bcr3-result-6rd7-36"></span><span class="select2-results">
+                            <ul class="select2-results__options" role="listbox" tabindex="-1" id="select2-filterbar_category-results" aria-activedescendant="bcr3-result-6rd7-36">
+                              <li class="select2-results__option select2-results__option--highlighted" id="bcr3-result-6rd7-36" role="option" data-selected="false" tabindex="-1" aria-selected="true">Event with Tickets</li>
+                              <li class="select2-results__option" id="wobz-result-hpyc-19" role="option" data-selected="false" tabindex="-1">Farmer's Market</li>
+                              <li class="select2-results__option" id="u6j2-result-bhrq-22" role="option" data-selected="false" tabindex="-1">Food</li>
+                              <li class="select2-results__option" id="4h1i-result-ycka-24" role="option" data-selected="false" tabindex="-1">Kids</li>
+                              <li class="select2-results__option" id="q0md-result-6rwr-35" role="option" data-selected="false" tabindex="-1">Live Events</li>
+                              <li class="select2-results__option" id="4mtf-result-semd-26" role="option" data-selected="false" tabindex="-1">Music</li>
+                              <li class="select2-results__option" id="r6op-result-et84-27" role="option" data-selected="false" tabindex="-1">Non-profit</li>
+                              <li class="select2-results__option" id="y2u8-result-rxgy-31" role="option" data-selected="false" tabindex="-1">Online Events</li>
+                              <li class="select2-results__option" id="a73w-result-qvh8-34" role="option" data-selected="false" tabindex="-1">Recurring Events</li>
+                            </ul>
+                          </span></span></span></span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--dropdown">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_organizer-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_organizer-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Organizers</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_organizer-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_organizer-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_organizer-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Organizers </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-dropdown">
+                    <input class="tribe-filter-bar-c-dropdown__input tribe-dropdown-created select2-hidden-accessible" id="filterbar_organizer" data-js="tribe-filter-bar-c-dropdown-input" name="tribe_organizers[]" type="hidden" value="" data-allow-html="" data-dropdown-css-width="false" data-options="[{&quot;text&quot;:&quot;Barney Stinson&quot;,&quot;id&quot;:&quot;916&quot;,&quot;value&quot;:916},{&quot;text&quot;:&quot;Ted Mosby&quot;,&quot;id&quot;:&quot;315&quot;,&quot;value&quot;:315},{&quot;text&quot;:&quot;Tom Haverford&quot;,&quot;id&quot;:&quot;914&quot;,&quot;value&quot;:914}]" data-attach-container="" placeholder="Select" style="width: 100%;" tabindex="-1" aria-hidden="true"><span class="select2 select2-container select2-container--default select2-container--below tribe-filter-bar-c-dropdown__input tribe-dropdown-created select2-container--open" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-filterbar_organizer-container" role="combobox" aria-activedescendant="dztl-result-lyru-916"><span class="select2-selection__rendered" id="select2-filterbar_organizer-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"><span class="select2-selection__choice__text">Select</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"><span class="select2-dropdown select2-dropdown--below" dir="ltr"><span class="select2-search select2-search--dropdown select2-search--hide"><input class="select2-search__field" type="text" tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-activedescendant="dztl-result-lyru-916"></span><span class="select2-results">
+                            <ul class="select2-results__options" role="listbox" tabindex="-1" id="select2-filterbar_organizer-results" aria-activedescendant="dztl-result-lyru-916">
+                              <li class="select2-results__option select2-results__option--highlighted" id="dztl-result-lyru-916" role="option" data-selected="false" tabindex="-1" aria-selected="true">Barney Stinson</li>
+                              <li class="select2-results__option" id="vl1m-result-r67w-315" role="option" data-selected="false" tabindex="-1">Ted Mosby</li>
+                              <li class="select2-results__option" id="1znu-result-45fa-914" role="option" data-selected="false" tabindex="-1">Tom Haverford</li>
+                            </ul>
+                          </span></span></span></span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--dropdown">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_tag-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_tag-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Tags</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_tag-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_tag-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_tag-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Tags </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-dropdown">
+                    <input class="tribe-filter-bar-c-dropdown__input tribe-dropdown-created select2-hidden-accessible" id="filterbar_tag" data-js="tribe-filter-bar-c-dropdown-input" name="tribe_tags[]" type="hidden" value="" data-allow-html="" data-dropdown-css-width="false" data-options="[{&quot;text&quot;:&quot;Virtual Events Add-on&quot;,&quot;id&quot;:&quot;33&quot;,&quot;value&quot;:33}]" data-attach-container="" placeholder="Select" style="width: 100%;" tabindex="-1" aria-hidden="true"><span class="select2 select2-container select2-container--default select2-container--below tribe-filter-bar-c-dropdown__input tribe-dropdown-created select2-container--open" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-filterbar_tag-container" role="combobox" aria-activedescendant="7czc-result-zw8m-33"><span class="select2-selection__rendered" id="select2-filterbar_tag-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"><span class="select2-selection__choice__text">Select</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"><span class="select2-dropdown select2-dropdown--below" dir="ltr"><span class="select2-search select2-search--dropdown select2-search--hide"><input class="select2-search__field" type="text" tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-activedescendant="7czc-result-zw8m-33"></span><span class="select2-results">
+                            <ul class="select2-results__options" role="listbox" tabindex="-1" id="select2-filterbar_tag-results" aria-activedescendant="7czc-result-zw8m-33">
+                              <li class="select2-results__option select2-results__option--highlighted" id="7czc-result-zw8m-33" role="option" data-selected="false" tabindex="-1" aria-selected="true">Virtual Events Add-on</li>
+                            </ul>
+                          </span></span></span></span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--checkbox">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_day_of_week-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_day_of_week-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Day</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_day_of_week-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_day_of_week-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_day_of_week-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Day </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="sunday" name="tribe_dayofweek[]" type="checkbox" value="1" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="sunday">
+                      Sunday </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="monday" name="tribe_dayofweek[]" type="checkbox" value="2" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="monday">
+                      Monday </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="tuesday" name="tribe_dayofweek[]" type="checkbox" value="3" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="tuesday">
+                      Tuesday </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="wednesday" name="tribe_dayofweek[]" type="checkbox" value="4" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="wednesday">
+                      Wednesday </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="thursday" name="tribe_dayofweek[]" type="checkbox" value="5" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="thursday">
+                      Thursday </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="friday" name="tribe_dayofweek[]" type="checkbox" value="6" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="friday">
+                      Friday </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="saturday" name="tribe_dayofweek[]" type="checkbox" value="7" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="saturday">
+                      Saturday </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--checkbox">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_time_of_day-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_time_of_day-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Time</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_time_of_day-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_time_of_day-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_time_of_day-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Time </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="all-day" name="tribe_timeofday[]" type="checkbox" value="allday" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="all-day">
+                      All Day </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="morning" name="tribe_timeofday[]" type="checkbox" value="06-12" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="morning">
+                      Morning </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="afternoon" name="tribe_timeofday[]" type="checkbox" value="12-17" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="afternoon">
+                      Afternoon </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="evening" name="tribe_timeofday[]" type="checkbox" value="17-21" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="evening">
+                      Evening </label>
+                  </div>
+                  <div class="tribe-filter-bar-c-checkbox tribe-common-form-control-checkbox" data-js="tribe-filter-bar-c-checkbox">
+                    <input class="tribe-common-form-control-checkbox__input" id="night" name="tribe_timeofday[]" type="checkbox" value="21-06" data-js="tribe-filter-bar-c-checkbox-input">
+                    <label class="tribe-common-form-control-checkbox__label" for="night">
+                      Night </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="tribe-filter-bar-c-filter tribe-filter-bar-c-filter--pill tribe-filter-bar-c-filter--range">
+            <div class="tribe-filter-bar-c-filter__toggle-wrapper">
+              <button class="tribe-filter-bar-c-filter__toggle tribe-common-b1 tribe-common-b2--min-medium" id="filterbar_cost-toggle-60637c42-7320-4754-907e-156645d67906" type="button" aria-controls="filterbar_cost-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-c-filter-toggle">
+                <div class="tribe-filter-bar-c-filter__toggle-text">
+                  <span class="tribe-filter-bar-c-filter__toggle-label">Cost ($)</span><span class="tribe-filter-bar-c-filter__toggle-label-colon">:</span>
+                  <span class="tribe-filter-bar-c-filter__toggle-selections">
+                  </span>
+                </div>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--plus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--plus tribe-filter-bar-c-filter__toggle-plus-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5.881H1M5.88 1v10" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Open filter </span>
+                </span>
+
+                <span class="tribe-filter-bar-c-filter__toggle-icon tribe-filter-bar-c-filter__toggle-icon--minus">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--minus tribe-filter-bar-c-filter__toggle-minus-icon" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.88H1" stroke-width="2" stroke-linecap="square"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__toggle-icon-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </span>
+              </button>
+
+              <button class="tribe-filter-bar-c-filter__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-filter__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-filter__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+
+            <div class="tribe-filter-bar-c-filter__container" id="filterbar_cost-container-60637c42-7320-4754-907e-156645d67906" aria-hidden="true" aria-labelledby="filterbar_cost-toggle-60637c42-7320-4754-907e-156645d67906 filterbar_cost-pill-toggle-60637c42-7320-4754-907e-156645d67906">
+              <fieldset class="tribe-filter-bar-c-filter__filters-fieldset">
+                <legend class="tribe-filter-bar-c-filter__filters-legend tribe-common-h6 tribe-common-h--alt is-hidden tribe-common-a11y-visual-hide">
+                  Cost ($) </legend>
+
+                <button class="tribe-filter-bar-c-filter__filters-close" type="button" data-js="tribe-filter-bar-c-filter-close">
+                  <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close tribe-filter-bar-c-filter__filters-close-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11M1 1l10 10" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="tribe-filter-bar-c-filter__filters-close-text is-hidden tribe-common-a11y-visual-hide">
+                    Close filter </span>
+                </button>
+
+                <div class="tribe-filter-bar-c-filter__filter-fields">
+                  <div class="tribe-filter-bar-c-range">
+                    <label class="tribe-filter-bar-c-range__label" for="filterbar_cost">
+                      $0 - $2200 </label>
+                    <input class="tribe-filter-bar-c-range__input" id="filterbar_cost" name="tribe_cost" type="hidden" value="">
+                    <div class="tribe-filter-bar-c-range__slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-js="tribe-filter-bar-c-range-slider" data-min="0" data-max="2200">
+                      <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tribe-filter-bar__filters-slider-container swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode" data-js="tribe-filter-bar-filters-slider-container">
+        <div class="tribe-filter-bar__filters-slider-wrapper swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+          <div class="tribe-filter-bar__filters-slide swiper-slide swiper-slide-active">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_filterbar_events_virtual">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_events_virtual-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_events_virtual-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Virtual Events</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide swiper-slide-next">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_featuredevent[]">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_featured-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_featured-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Featured Events</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_eventcategory[]">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_category-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_category-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Event Category</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_organizers[]">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_organizer-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_organizer-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Organizers</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_tags[]">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_tag-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_tag-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Tags</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_dayofweek[]">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_day_of_week-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_day_of_week-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Day</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_timeofday[]">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_time_of_day-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_time_of_day-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Time</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+          <div class="tribe-filter-bar__filters-slide swiper-slide">
+            <div class="tribe-filter-bar-c-pill tribe-filter-bar-c-pill--button tribe-filter-bar__filters-slide-pill" data-filter-name="tribe_cost">
+              <button class="tribe-filter-bar-c-pill__pill tribe-common-b2 tribe-common-b3--min-medium" id="filterbar_cost-pill-toggle-60637c42-7320-4754-907e-156645d67906" aria-controls="filterbar_cost-container-60637c42-7320-4754-907e-156645d67906" aria-expanded="false" data-js="tribe-events-accordion-trigger tribe-filter-bar-filters-slide-pill" type="button">
+                <span class="tribe-filter-bar-c-pill__pill-label">Cost ($)</span><span class="tribe-filter-bar-c-pill__pill-label-colon">:</span>
+                <span class="tribe-filter-bar-c-pill__pill-selections">
+                </span>
+              </button>
+              <button class="tribe-filter-bar-c-pill__remove-button" data-js="tribe-filter-bar-c-pill__remove-button" type="button">
+                <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--close-alt tribe-filter-bar-c-pill__remove-button-icon" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l6 6M7 1L1 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="tribe-filter-bar-c-pill__remove-button-text is-hidden tribe-common-a11y-visual-hide">
+                  Remove filters </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tribe-filter-bar__filters-slider-nav">
+          <button class="tribe-filter-bar__filters-slider-nav-button tribe-filter-bar__filters-slider-nav-button--prev swiper-button-disabled" data-js="tribe-filter-bar-filters-slider-nav-button tribe-filter-bar-filters-slider-nav-button-prev" type="button" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true">
+            <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-left tribe-filter-bar__filters-slider-nav-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16">
+              <path d="M9.7 14.4l-1.5 1.5L.3 8 8.2.1l1.5 1.5L3.3 8l6.4 6.4z"></path>
+            </svg>
+          </button>
+          <button class="tribe-filter-bar__filters-slider-nav-button tribe-filter-bar__filters-slider-nav-button--next swiper-button-disabled" data-js="tribe-filter-bar-filters-slider-nav-button tribe-filter-bar-filters-slider-nav-button-next" type="button" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true">
+            <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-right tribe-filter-bar__filters-slider-nav-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16">
+              <path d="M.3 1.6L1.8.1 9.7 8l-7.9 7.9-1.5-1.5L6.7 8 .3 1.6z"></path>
+            </svg>
+          </button>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class="tribe-events-c-top-bar tribe-events-header__top-bar">
+
+    <nav class="tribe-events-c-top-bar__nav tribe-common-a11y-hidden">
+      <ul class="tribe-events-c-top-bar__nav-list">
+        <li class="tribe-events-c-top-bar__nav-list-item">
+          <a href="https://demo.theeventscalendar.com/events/month/2020-12/?hide_subsequent_recurrences=1" class="tribe-common-c-btn-icon tribe-common-c-btn-icon--caret-left tribe-events-c-top-bar__nav-link tribe-events-c-top-bar__nav-link--prev" aria-label="Previous month" title="Previous month" data-js="tribe-events-view-link">
+            <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-left tribe-common-c-btn-icon__icon-svg tribe-events-c-top-bar__nav-link-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16">
+              <path d="M9.7 14.4l-1.5 1.5L.3 8 8.2.1l1.5 1.5L3.3 8l6.4 6.4z"></path>
+            </svg>
+          </a>
+        </li>
+
+        <li class="tribe-events-c-top-bar__nav-list-item">
+          <a href="https://demo.theeventscalendar.com/events/month/2021-02/?hide_subsequent_recurrences=1" class="tribe-common-c-btn-icon tribe-common-c-btn-icon--caret-right tribe-events-c-top-bar__nav-link tribe-events-c-top-bar__nav-link--next" aria-label="Next month" title="Next month" data-js="tribe-events-view-link">
+            <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-right tribe-common-c-btn-icon__icon-svg tribe-events-c-top-bar__nav-link-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16">
+              <path d="M.3 1.6L1.8.1 9.7 8l-7.9 7.9-1.5-1.5L6.7 8 .3 1.6z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="https://demo.theeventscalendar.com/events/month/?hide_subsequent_recurrences=1" class="tribe-common-c-btn-border-small tribe-events-c-top-bar__today-button tribe-common-a11y-hidden" data-js="tribe-events-view-link" aria-label="Click to select today's date" title="Click to select today's date">
+      Today</a>
+
+    <div class="tribe-events-c-top-bar__datepicker">
+      <button class="tribe-common-h3 tribe-common-h--alt tribe-events-c-top-bar__datepicker-button" data-js="tribe-events-top-bar-datepicker-button" type="button" aria-label="Click to toggle datepicker" title="Click to toggle datepicker">
+        <time datetime="2021-01" class="tribe-events-c-top-bar__datepicker-time">
+          <span class="tribe-events-c-top-bar__datepicker-mobile">
+            1/1/2021 </span>
+          <span class="tribe-events-c-top-bar__datepicker-desktop tribe-common-a11y-hidden">
+            January 2021 </span>
+        </time>
+        <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-down tribe-events-c-top-bar__datepicker-button-icon-svg" viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.008.609L5 4.6 8.992.61l.958.958L5 6.517.05 1.566l.958-.958z" class="tribe-common-c-svgicon__svg-fill"></path>
+        </svg>
+      </button>
+      <label class="tribe-events-c-top-bar__datepicker-label is-hidden tribe-common-a11y-visual-hide" for="tribe-events-top-bar-date">
+        Select date. </label>
+      <input type="text" class="tribe-events-c-top-bar__datepicker-input is-hidden tribe-common-a11y-visual-hide" data-js="tribe-events-top-bar-date" id="tribe-events-top-bar-date" name="tribe-events-views[tribe-bar-date]" value="1/1/2021" tabindex="-1" autocomplete="off" readonly="readonly">
+      <div class="tribe-events-c-top-bar__datepicker-container" data-js="tribe-events-top-bar-datepicker-container"></div>
+      <template class="tribe-events-c-top-bar__datepicker-template-prev-icon">
+        <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-left tribe-events-c-top-bar__datepicker-nav-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16">
+          <path d="M9.7 14.4l-1.5 1.5L.3 8 8.2.1l1.5 1.5L3.3 8l6.4 6.4z"></path>
+        </svg>
+      </template>
+      <template class="tribe-events-c-top-bar__datepicker-template-next-icon">
+        <svg class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-right tribe-events-c-top-bar__datepicker-nav-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16">
+          <path d="M.3 1.6L1.8.1 9.7 8l-7.9 7.9-1.5-1.5L6.7 8 .3 1.6z"></path>
+        </svg>
+      </template>
+    </div>
+
+    <div class="tribe-events-c-top-bar__actions tribe-common-a11y-hidden">
+    </div>
+
+  </div>
+</header>

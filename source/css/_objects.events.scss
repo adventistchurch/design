@@ -32,6 +32,7 @@
     line-height: 1.7;
   }
 
+  // EVENTS IN LISTING VIEW
   // LIST ITEM -----------------------------------------
   &--list-item {
     display: flex;
@@ -111,6 +112,7 @@
     }
   }
 
+  // BLOCK LEVEL - event-block.twig / event-calendar-day-block.twig
   // CALENDAR ITEM -----------------------------------------
   &--calendar-item {
     padding-bottom: $pad;
@@ -158,6 +160,7 @@
   }
 }
 
+// PAGINATION
 .c-event,
 .c-events,
 .c-events-listing {
@@ -177,6 +180,7 @@
   }
 }
 
+// DISPLAY OF CALENDAR VIEW
 #c-alps-calendar {
   border: 1px solid #eee;
 
@@ -192,7 +196,9 @@
 
     &:first-of-type {
       padding-top: $space;
-      padding-bottom: $space
+      @include media('>=large') {
+        padding-bottom: $space;
+      }
     }
   }
 
@@ -218,12 +224,61 @@
 
     [role=gridcell] {
       position: relative;
-      padding: $space;
+      padding: $space / 2;
       width: calc((100 / 7) * 1%);
       min-width: calc((100 / 7) * 1%);
-      min-height: 200px;
-      border-top: 1px solid #eee;
-      border-left: 1px solid #eee;
+      min-height: 75px;
+      border-top: 1px solid $c-gray--light;
+      border-left: 1px solid $c-gray--light;
+
+      @include media('>=large') {
+        min-height: 200px;
+        padding: $space;
+      }
+
+      // PAST, TODAY STATES FOR DAYS
+      &.c-alps-calendar__day--past {
+        .c-alps-calendar__event {
+          color: rgba($c-gray, 0.5);
+        }
+      }
+
+      &.c-alps-calendar__day--today {
+        border-left: 4px solid blue; // TODO: ADD THEMING HERE
+
+        .c-calendar-event__time {
+          @include u-center-all;
+
+          position: relative;
+          margin-top: -7px;
+          width: $space * 1.5;
+          height: $space * 1.5;
+          text-align: center;
+          padding: $space / 5;
+          border-radius: 50%;
+          background-color: blue; // TODO: ADD THEMING HERE
+          color: $c-white;
+        }
+      }
+      // END -- PAST, TODAY STATES FOR DAYS
+
+      .c-calendar-event__meta {
+        @include media('<large') {
+          display: none;
+        }
+      }
+
+
+      .c-calendar-event__marker {
+        @include media('<large') {
+          display: block;
+          margin: 0 auto;
+          width: $space / 2;
+          height: $space / 2;
+          background-color: #666;
+          border-radius: 50%;
+        }
+      }
 
       .c-calendar-event__title {
         font-family: $ff-font--secondary;
@@ -232,6 +287,7 @@
         font-weight: normal;
       }
 
+      // EVENT INFO HOVER
       .c-calendar-info-hover {
         position: absolute;
         display: none;
@@ -274,7 +330,9 @@
         cursor: pointer;
 
         &:hover .c-calendar-info-hover {
-          display: block;
+          @include media('>=large') {
+            display: block;
+          }
         }
       }
 
